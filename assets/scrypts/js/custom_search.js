@@ -20,11 +20,12 @@ searchInputElement.addEventListener('input', (e) => {
     searchInputElement.style = "border-radius: 30px 30px 0 0"
     data.forEach(item => {
 
-        if(item.includes(searchInputElement.value)){
+        if(item.toLowerCase().includes(searchInputElement.value.toLowerCase())){
             const inputDropdownItemElement = document.createElement('div')
             inputDropdownItemElement.classList.add('input__dropdown__item')
             const inputDropdownItemLinkElement = document.createElement('a')
             inputDropdownItemLinkElement.textContent = item
+            inputDropdownItemLinkElement.href = item
             inputDropdownItemElement.appendChild(inputDropdownItemLinkElement)
             inputDropdownElement.appendChild(inputDropdownItemElement)
             headerSectionElement.appendChild(inputDropdownElement)
