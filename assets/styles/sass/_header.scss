@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #282A35;
+    color: #fff;
+    height: 80vh;
+    .header__section{
+        &__title{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        &__poragrph{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &__search{
+            position: relative;
+            margin-top: 40px;
+            &__input{
+                padding: 15px 130px 15px 30px;
+                border-radius: 30px;
+                border: none;
+                width: 50%;
+            }
+            &__button{
+                position: absolute;
+                right: 24%;
+                top: 50%;
+                transform: translate(-15%, -50%);
+                padding: 13px 40px;
+                border-radius: 30px;
+                border: none;
+                background-color: $main-color;
+                svg{
+                    color: #fff;
+                }
+            }
+            &__button:hover{
+                background-color: $main-color-hover;
+            }
+        }
+    }
+}
