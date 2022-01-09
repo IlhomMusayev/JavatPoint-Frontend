@@ -43,7 +43,7 @@ header {
 
 header .header__section__title {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 header .header__section__poragrph {
@@ -61,6 +61,34 @@ header .header__section__search__input {
   border-radius: 30px;
   border: none;
   width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .header__section__search .input__dropdown {
+  position: absolute;
+  left: 50%;
+  padding: 8px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 50%;
+  background-color: #fff;
+}
+
+header .header__section__search .input__dropdown__item {
+  padding: 8px;
+}
+
+header .header__section__search .input__dropdown__item a {
+  text-decoration: none;
+  color: #818080;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .header__section__search .input__dropdown__item a:hover {
+  color: #282A35;
 }
 
 header .header__section__search__button {
@@ -123,6 +151,7 @@ body {
 
 ::-webkit-scrollbar {
   height: 5px;
+  width: 5px;
 }
 
 /* Track */

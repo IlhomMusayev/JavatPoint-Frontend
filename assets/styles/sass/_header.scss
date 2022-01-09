@@ -8,7 +8,7 @@ header{
     .header__section{
         &__title{
             font-size: 50px;
-            font-weight: 700;
+            font-weight: 600;
         }
         &__poragrph{
             font-size: 20px;
@@ -22,6 +22,29 @@ header{
                 border-radius: 30px;
                 border: none;
                 width: 50%;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .input__dropdown{
+                position: absolute;
+                left: 50%;                    padding: 8px;
+
+                transform: translate(-50%);
+                width: 50%;
+                background-color: #fff;
+                &__item{
+                    padding: 8px;
+                    a{
+                        text-decoration: none;
+                        color: #818080;
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    a:hover{
+                        color: #282A35;
+                    }
+                }
             }
             &__button{
                 position: absolute;
