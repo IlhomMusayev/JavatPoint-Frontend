@@ -240,4 +240,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #adadad;
 }
+
+.note-modal-backdrop {
+  z-index: 2;
+  display: none !important;
+}
+
+.note-modal-content {
+  z-index: 9999;
+}
+
+#summernote {
+  background-color: #f2f2f2;
+}
 /*# sourceMappingURL=main.css.map */

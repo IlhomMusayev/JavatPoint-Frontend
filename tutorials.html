@@ -14,16 +14,19 @@
       defer
     ></script>
     <script src="./assets/scrypts/js/init-alpine.js"></script>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
     />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
-    ></script>
+    ></script> -->
     <script src="./assets/scrypts/js/charts-lines.js" defer></script>
     <script src="./assets/scrypts/js/charts-pie.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
   </head>
   <body>
     <div
@@ -831,8 +834,8 @@
                     x-transition:leave-start="opacity-100"
                     x-transition:leave-end="opacity-0  transform translate-y-1/2" @click.away="closeModal"
                     @keydown.escape="closeModal"
-                    class="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
-                    role="dialog" id="modal">
+                    class="px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-lg"
+                    role="dialog" id="modal" style="width: 80%; height: 80%; overflow-y: auto;">
                     <!-- Remove header if you don't want a close icon. Use modal body to place modal tile. -->
                     <header class="flex justify-end">
                         <button
@@ -872,10 +875,8 @@
                                       <option>Php</option>
                                     </select>
                                 </label>
-                                <div class="wysiwyg">
-                                    <textarea name="name" placeholder="Write a comment ..."></textarea>
-                                  </div>
-                                  
+
+                                <div id="summernote"></div>
 
                                 <button
                                     class="mt-6 px-3 py-1 text-white transition-colors duration-150 bg-purple-600 border border-r-0 border-purple-600 rounded-md focus:outline-none focus:shadow-outline-purple">Mavzu
@@ -889,17 +890,22 @@
       </div>
     </div>
 
-    
     <script>
-        
-        wysiwyg( '.wysiwyg', {
-          toolbar: 'demand',                        // 'top','bottom','demand',null
-          buttons: [buttons],                       // buttons on toolbar
-          selectionbuttons: [selectionbuttons],     // buttons on selection-toolbar
-          suggester: suggester( open_suggestion ),  // handle suggestions
-          interceptenter: interceptenter(),         // intercept 'enter'
-          hijackmenu: false                         // toolbar instead context menu
+        $('#summernote').summernote({
+          placeholder: 'Tutorials yozishiz mumkin bro ✊🏻',
+          tabsize: 3,
+          height: 120,
+          
+          toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+          ]
         });
-        </script>
+      </script>
   </body>
 </html>
