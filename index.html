@@ -30,14 +30,12 @@
                             <div class="hidden lg:block lg:ml-6">
                                 <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="/"
+                                    class="bg-zinc-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                                <a href="#tutorials"
+                                    class="text-gray-300 hover:bg-zinc-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tutorials</a>
                                 <a href="#"
-                                    class="bg-zinc-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                                <a href="#"
-                                    class="text-gray-300 hover:bg-zinc-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-                                <a href="#"
-                                    class="text-gray-300 hover:bg-zinc-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                                <a href="#"
-                                    class="text-gray-300 hover:bg-zinc-900   hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+                                    class="text-gray-300 hover:bg-zinc-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                             </div>
                         </div>
                     </div>
@@ -74,21 +72,19 @@
                 x-show="open">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="/"
+                        class="bg-zinc-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#tutorials"
+                        class="text-gray-300 hover:bg-zinc-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tutorials</a>
                     <a href="#"
-                        class="bg-zinc-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-zinc-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-zinc-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-zinc-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                        class="text-gray-300 hover:bg-zinc-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
                 </div>
 
             </div>
         </nav>
 
     </div>
-    <div class="nav-scroller mx-auto px-2 sm:px-4 lg:px-8">
+    <!-- <div class="nav-scroller mx-auto px-2 sm:px-4 lg:px-8">
         <div class="programming__languages container">
             <ul class="programming__languages__list flex nav">
                 <li class="programming__languages__list__item">
@@ -168,7 +164,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!-- End Navbar -->
 
 
@@ -204,7 +200,7 @@
     <!-- Main -->
     <main>
         <div class="container">
-            <div class="languages lg:grid lg:grid-rows-2 grid-flow-col gap-5">
+            <div class="languages lg:grid lg:grid-rows-2 grid-flow-col gap-10" id="tutorials">
                 <div class="languages__item ">
                     <i class="fab fa-html5"></i>
                     <h4 class="title">HTML</h4>

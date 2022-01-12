@@ -14,19 +14,20 @@
       defer
     ></script>
     <script src="./assets/scrypts/js/init-alpine.js"></script>
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
     />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
-    ></script> -->
+    ></script>
     <script src="./assets/scrypts/js/charts-lines.js" defer></script>
     <script src="./assets/scrypts/js/charts-pie.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+
+      
   </head>
   <body>
     <div
@@ -876,7 +877,14 @@
                                     </select>
                                 </label>
 
-                                <div id="summernote"></div>
+                                <!-- <div id="summernote"></div> -->
+                                <label class="block mt-4 text-sm">
+                                  <span class="text-gray-700 dark:text-gray-400">
+                                    Darslik uchun mattni kiriting!:
+                                  </span>
+                                  <textarea name="myTextarea" id="myTextarea"></textarea>
+
+                                </label>
 
                                 <button
                                     class="mt-6 px-3 py-1 text-white transition-colors duration-150 bg-purple-600 border border-r-0 border-purple-600 rounded-md focus:outline-none focus:shadow-outline-purple">Mavzu
@@ -890,22 +898,9 @@
       </div>
     </div>
 
-    <script>
-        $('#summernote').summernote({
-          placeholder: 'Tutorials yozishiz mumkin bro ✊🏻',
-          tabsize: 3,
-          height: 120,
-          
-          toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
-            ['view', ['fullscreen', 'codeview', 'help']]
-          ]
-        });
-      </script>
+    <script src="https://cdn.tiny.cloud/1/ez4jtc020qfra5unsldb01re2erujz0qzk751qmzwmsfgf6p/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="./assets/scrypts/js/tinymce.js"></script>
+
+
   </body>
 </html>

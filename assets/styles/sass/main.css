@@ -66,6 +66,7 @@ header .header__section__search__input {
   font-size: 18px;
   font-weight: 600;
   outline: none;
+  color: #000;
 }
 
 header .header__section__search .input__dropdown {
@@ -98,8 +99,8 @@ header .header__section__search__button {
   position: absolute;
   right: 24%;
   top: 50%;
-  -webkit-transform: translate(-16%, -50%);
-          transform: translate(-16%, -50%);
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
   padding: 13px 40px;
   border-radius: 30px;
   border: none;
@@ -186,6 +187,7 @@ header .header__section__search__button:hover {
   margin-top: 50px;
   text-align: center;
   padding: 20px 0;
+  border-radius: 8px;
 }
 
 .languages__item .svg-inline--fa {
@@ -207,6 +209,10 @@ header .header__section__search__button:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
